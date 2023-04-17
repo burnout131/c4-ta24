@@ -10,13 +10,13 @@ package com.mrojo.ta24.utils;
 public enum Trabajo {
 	PROGRAMMER(2500), TESTER(1500), ADMINISTRATOR(1800);
 
-	private int salario;
+	private double salario;
 
-	Trabajo(int salario) {
+	Trabajo(double salario) {
 		this.salario = salario;
 	}
 
-	public int getSalary() {
+	public double getSalario() {
 		return this.salario;
 	}
 }

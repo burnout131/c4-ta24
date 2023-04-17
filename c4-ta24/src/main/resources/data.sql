@@ -1,7 +1,7 @@
 DROP table IF EXISTS empleado;
 
 create table empleado(
-	id int auto_increment,
+	id int auto_increment primary key,
 	nombre varchar(250),
     trabajo varchar(250),
 	salario int

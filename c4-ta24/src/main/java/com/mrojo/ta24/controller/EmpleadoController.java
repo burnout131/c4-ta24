@@ -34,7 +34,8 @@ public class EmpleadoController {
 
 	@PostMapping("/empleados")
 	public Empleado guardarEmpleado(@RequestBody Empleado empleado) {
-		return empleadoService.guardarEmpleado(empleado);
+		Empleado nuevoEmpleado = new Empleado(empleado.getId(), empleado.getNombre(), empleado.getTrabajo());
+		return empleadoService.guardarEmpleado(nuevoEmpleado);
 	}
 
 	@GetMapping("/empleados/{id}")

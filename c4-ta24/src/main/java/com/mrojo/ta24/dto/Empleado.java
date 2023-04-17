@@ -16,7 +16,7 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "empleado")
 public class Empleado {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -25,7 +25,7 @@ public class Empleado {
 	@Column(name = "trabajo")
 	private String trabajo;
 	@Column(name = "salario")
-	private int salario;
+	private double salario;
 
 	public Empleado() {
 
@@ -39,7 +39,7 @@ public class Empleado {
 		this.salario = obtenerSalarioPorTrabajo(trabajo);
 	}
 
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
@@ -63,20 +63,20 @@ public class Empleado {
 		this.trabajo = trabajo;
 	}
 
-	public int getSalario() {
+	public double getSalario() {
 		return salario;
 	}
 
-	public void setSalario(int salario) {
+	public void setSalario(double salario) {
 		this.salario = salario;
 	}
-	
-	public int obtenerSalarioPorTrabajo(String trabajo) {
+
+	public double obtenerSalarioPorTrabajo(String trabajo) {
 		Trabajo[] trabajos_disponibles = Trabajo.values();
 
 		for (Trabajo trabajos : trabajos_disponibles) {
 			if (trabajos.name().equalsIgnoreCase(trabajo)) {
-				return trabajos.getSalary();
+				return trabajos.getSalario();
 			}
 		}
 		return 0;
