@@ -1,12 +1,12 @@
-package com.example.demo.service;
+package com.mrojo.ta24.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.dao.IEmpleadoDAO;
-import com.example.demo.dto.Empleado;
+import com.mrojo.ta24.dao.IEmpleadoDAO;
+import com.mrojo.ta24.dto.Empleado;
 
 @Service
 public class EmpleadoService implements IEmpleadoService{

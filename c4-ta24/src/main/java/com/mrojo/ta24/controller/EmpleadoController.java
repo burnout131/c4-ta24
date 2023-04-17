@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package com.mrojo.ta24.controller;
 
 import java.util.List;
 
@@ -11,8 +11,9 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.example.demo.dto.Empleado;
-import com.example.demo.service.EmpleadoService;
+
+import com.mrojo.ta24.dto.Empleado;
+import com.mrojo.ta24.service.EmpleadoService;
 
 @RestController
 @RequestMapping("/api")

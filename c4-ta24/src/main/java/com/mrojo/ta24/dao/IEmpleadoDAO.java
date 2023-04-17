@@ -1,9 +1,10 @@
-package com.example.demo.dao;
+package com.mrojo.ta24.dao;
 
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import com.example.demo.dto.Empleado;
+
+import com.mrojo.ta24.dto.Empleado;
 
 /**
  * @author Marc

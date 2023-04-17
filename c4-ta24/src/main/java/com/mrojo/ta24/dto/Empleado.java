@@ -1,6 +1,6 @@
-package com.example.demo.dto;
+package com.mrojo.ta24.dto;
 
-import com.example.demo.utils.Trabajo;
+import com.mrojo.ta24.utils.Trabajo;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

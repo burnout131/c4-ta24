@@ -1,8 +1,8 @@
-package com.example.demo.service;
+package com.mrojo.ta24.service;
 
 import java.util.List;
 
-import com.example.demo.dto.Empleado;
+import com.mrojo.ta24.dto.Empleado;
 
 public interface IEmpleadoService {
 

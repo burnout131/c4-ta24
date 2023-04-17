@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.example.demo.utils;
+package com.mrojo.ta24.utils;
 
 /**
  * @author Marc
